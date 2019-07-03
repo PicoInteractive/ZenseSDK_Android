@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#000000"
+	android:focusable="true"
+	android:focusableInTouchMode="true"
+	tools:context=".MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+	<android.opengl.GLSurfaceView
+		android:id="@+id/glv_main"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center" />
+
+	<RelativeLayout
+		android:layout_width="150dp"
+		android:layout_height="300dp"
+		android:layout_gravity="right|center_vertical">
+
+		<Spinner
+			android:id="@+id/spinner_viewtype"
+			android:gravity="center"
+			android:layout_width="140dp"
+			android:layout_height="30dp"
+			android:layout_alignParentRight ="true"
+			android:layout_marginTop ="30dp"
+			android:background="#FFFFFF"/>
+		<Spinner
+			android:id="@+id/spinner_datatype"
+			android:gravity="center"
+			android:layout_width="140dp"
+			android:layout_height="30dp"
+			android:layout_alignParentRight ="true"
+			android:layout_marginTop ="120dp"
+			android:background="#FFFFFF"/>
+		<Spinner
+			android:id="@+id/spinner_resolution"
+			android:gravity="center"
+			android:layout_width="140dp"
+			android:layout_height="30dp"
+			android:layout_alignParentRight ="true"
+			android:layout_marginTop ="210dp"
+			android:background="#FFFFFF"/>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="150dp"
+		android:layout_height="300dp"
+		android:layout_gravity="left|center_vertical">
+		<Spinner
+			android:id="@+id/spinner_paratype"
+			android:gravity="center"
+			android:layout_width="140dp"
+			android:layout_height="30dp"
+			android:layout_alignParentLeft ="true"
+			android:layout_marginTop ="30dp"
+			android:background="#FFFFFF"/>
+		<EditText
+			android:id="@+id/paraValue"
+			android:gravity="center"
+			android:layout_width="140dp"
+			android:layout_height="30dp"
+			android:layout_alignParentLeft ="true"
+			android:layout_marginTop ="120dp"
+			android:background="#FFFFFF"
+			android:text="0" />
+		<Button
+			android:id="@+id/setPara"
+			android:gravity="center"
+			android:layout_width="140dp"
+			android:layout_height="30dp"
+			android:layout_alignParentLeft ="true"
+			android:layout_marginTop ="210dp"
+			android:text="set"
+			android:background="#FFFFFF" />
+	</RelativeLayout>
+
+	<CheckBox
+		android:id="@+id/map_rgb"
+		android:layout_width="140dp"
+		android:layout_height="30dp"
+		android:layout_gravity="bottom|left"
+        	android:clickable="false"
+		android:background="#FFFFFF"
+		android:text="MappedRgb" />
+
+	<CheckBox
+		android:id="@+id/map_depth"
+		android:layout_width="140dp"
+		android:layout_height="30dp"
+		android:layout_gravity="bottom|center_horizontal"
+		android:background="#FFFFFF"
+        android:clickable="true"
+		android:text="MappedDepth" />
+
+	<CheckBox
+		android:id="@+id/map_ir"
+		android:layout_width="140dp"
+		android:layout_height="30dp"
+		android:layout_gravity="bottom|right"
+		android:background="#FFFFFF"
+		android:clickable="true"
+		android:text="MappedIr" />
+
+</FrameLayout>

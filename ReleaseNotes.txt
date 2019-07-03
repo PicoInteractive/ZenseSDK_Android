@@ -1,0 +1,10 @@
+V1.3.7.7
+1. Add MJPEG decoder
+2. Optimize frame rate
+3. Optimize CPU load
+
+V1.3.6.0
+1. This version supports Depth/RGB/IR three kinds of data output.
+2. Supports for alignment of Depth/RGB/IR.
+3. Rgb resolution and other parameters can be set dynamically.
+4. Optimized frame rate.
